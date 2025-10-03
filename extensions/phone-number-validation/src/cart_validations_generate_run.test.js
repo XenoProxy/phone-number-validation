@@ -9,9 +9,9 @@ describe('cart checkout validation function', () => {
   it('returns an error when quantity exceeds one', () => {
     const result = cartValidationsGenerateRun({
       cart: {
-        lines: [
+        buyerIdentity: [
           {
-            quantity: 3
+            phone: 333
           }
         ]
       }
@@ -37,9 +37,9 @@ describe('cart checkout validation function', () => {
   it('returns no errors when quantity is one', () => {
     const result = cartValidationsGenerateRun({
       cart: {
-        lines: [
+        buyerIdentity: [
           {
-            quantity: 1
+            phone: 1
           }
         ]
       }

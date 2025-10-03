@@ -1,7 +1,9 @@
 query CartValidationsGenerateRunInput {
   cart {
-    lines {
-      quantity
+    deliveryGroups {
+      deliveryAddress {
+        phone
+      }
     }
   }
 }
